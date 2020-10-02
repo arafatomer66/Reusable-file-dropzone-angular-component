@@ -3,10 +3,13 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import {FileUploadComponent} from './dropzone/fileupload.component';
+import {FileSizePipe} from './dropzone/filesize.pipe';
+import {DropZoneDirective} from './dropzone/dropzone.directive';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent , FileUploadComponent , FileSizePipe , DropZoneDirective
   ],
   imports: [
     BrowserModule,
